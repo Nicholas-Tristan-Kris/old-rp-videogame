@@ -417,7 +417,6 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Eat
         m_TransitionDuration: 0.2
-        m_Animator: {fileID: 0}
     00000002:
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
@@ -609,7 +608,6 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Precast
         m_TransitionDuration: 0.2
-        m_Animator: {fileID: 0}
     00000003:
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:
@@ -650,7 +648,6 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Empty
         m_TransitionDuration: 0.2
-        m_Animator: {fileID: 0}
     00000009:
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -2624,7 +2621,6 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Drink
         m_TransitionDuration: 0.2
-        m_Animator: {fileID: 0}
     00000003:
       type: {class: Cooldown, ns: DevionGames.InventorySystem.ItemActions, asm: DevionGames.InventorySystem}
       data:

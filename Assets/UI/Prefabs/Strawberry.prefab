@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3389285748454474395}
   - component: {fileID: 7031902482093789106}
   - component: {fileID: 7117750137304853072}
+  - component: {fileID: 144914056}
   m_Layer: 0
   m_Name: Strawberry
   m_TagString: Untagged
@@ -128,10 +129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  useDistance: 1.2
-  triggerType: 9
+  useDistance: 3
+  triggerType: 8
   key: 102
-  actionTemplate: {fileID: 0}
+  actionTemplate: {fileID: 11400000, guid: 266be9dec7aecfd478a15030f031572c, type: 2}
   actions: []
   m_Interruptable: 0
   references:
@@ -150,10 +151,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveable: 1
   m_Items:
-  - {fileID: -3274323218415510871, guid: b5147eefd62dfa4429470133d826f15d, type: 2}
+  - {fileID: 3862718538228838981, guid: b5147eefd62dfa4429470133d826f15d, type: 2}
   m_Amounts: 01000000
   m_Modifiers:
   - modifiers: []
   onChange:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &144914056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690957323151261818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: Berry
+  m_Instruction: Pickup

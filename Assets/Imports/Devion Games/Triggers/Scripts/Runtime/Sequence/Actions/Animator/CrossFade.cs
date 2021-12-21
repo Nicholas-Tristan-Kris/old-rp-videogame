@@ -16,15 +16,14 @@ namespace DevionGames
         [SerializeField]
         private float m_TransitionDuration = 0.2f;
 
-        [SerializeField]
         private Animator m_Animator;
         private int m_ShortNameHash;
 
         public override void OnStart()
         {
             this.m_ShortNameHash = Animator.StringToHash(this.m_AnimatorState);
-
-            //this.m_Animator = this.m_Target == TargetType.Self ? gameObject.GetComponentInChildren<Animator>() : playerInfo.animator; 
+            
+            this.m_Animator = this.m_Target == TargetType.Self ? gameObject.GetComponentInChildren<Animator>() : playerInfo.animator; 
         }
 
         public override ActionStatus OnUpdate()

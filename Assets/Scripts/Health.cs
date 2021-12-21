@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Health : MonoBehaviour
 {
-    [SerializeField] public int health = 100;
+    [SerializeField] private int health = 100;
     [SerializeField] private float regenPerSec = 1;
     [SerializeField] private bool canRegen = false;
     private float nextActionTime = 0.0f;
@@ -32,13 +31,14 @@ public class Health : MonoBehaviour
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
         {
-            this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            Destroy(this.gameObject.GetComponent<Controller>());
+            gameObject.GetComponent<Rigidbody>().useGravity = false;
             Destroy(this.gameObject.GetComponent<Collider>(), anim.GetCurrentAnimatorStateInfo(0).length);
             foreach (Collider c in this.gameObject.GetComponentsInChildren<Collider>())
             {
                 Destroy(c);
             }
-            Destroy(this.gameObject, anim.GetCurrentAnimatorStateInfo(0).length+10f);
+            Destroy(this.gameObject, anim.GetCurrentAnimatorStateInfo(0).length+2f);
         }
     }
 
@@ -46,5 +46,15 @@ public class Health : MonoBehaviour
     {
         if (died == false) {anim.SetTrigger("Die"); died = true;}
         
+    }
+
+    public int getHealth()
+    {
+        return health;
+    }
+
+    public void setHealth(int health)
+    {
+        this.health = health;
     }
 }

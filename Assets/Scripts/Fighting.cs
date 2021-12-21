@@ -13,24 +13,19 @@ public class Fighting : MonoBehaviour
     void Update()
     {
         currentlyAttacking = weapon.GetComponent<weapon>().alreadyAttacked;
-        if (weapon != null)
+        isAttacking = m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack");
+
+        if (weapon != null && Input.GetButton("Fire1") && !isAttacking)
         {
             Attack();
+            weapon.GetComponent<weapon>().Attack();
         }
 
     }
 
     private void Attack()
     {
-        if (!m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && Input.GetButton("Fire1"))
-        {
-            isAttacking = true;
-            m_animator.SetTrigger("Attack");
-        }
-        else if(!m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-        {
-            isAttacking = false;
-        }
+        m_animator.SetTrigger("Attack");
 
     }
 }

@@ -23,19 +23,6 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isAttacking = player.GetComponent<Fighting>().isAttacking;
-
-        if (!(m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack")))
-        {
-            alreadyAttacked = false;
-        }
-
-        if (isAttacking & !alreadyAttacked)
-        {
-            alreadyAttacked = true;
-            Attack();
-        }
-
         if (uses <= 0)
         {
             //TODO - make it break instead of destroy it
@@ -43,18 +30,20 @@ public class weapon : MonoBehaviour
         }
     }
 
-    private void Attack()
+    public void Attack()
     {
+        Debug.Log("in the attack method enemy tag = " + enemy.tag);
         if (enemy.tag == "enemy")
         {
-            enemy.GetComponent<Health>().health -= damage;
+            enemy.GetComponent<Health>().setHealth(enemy.GetComponent<Health>().getHealth() - damage);
             enemy.GetComponent<Animator>().SetTrigger("Take Damage");
             uses--;
+            
         }
     }
 
     void OnTriggerEnter(Collider collision)
     {
-        enemy = collision.gameObject;
+        enemy = collision.gameObject.transform.root.gameObject;
     }
 }

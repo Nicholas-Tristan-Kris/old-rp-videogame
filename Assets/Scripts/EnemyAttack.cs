@@ -24,12 +24,12 @@ public class EnemyAttack : MonoBehaviour
     }
     public void Attack(GameObject player)
     {
-        if (!alreadyAttacked && isAttacking)
+        if (!alreadyAttacked && isAttacking && (this.gameObject.GetComponent<Health>().getHealth() > 0))
         {
             alreadyAttacked = true;
             if (player.tag == "Player")
             {
-                player.GetComponent<Health>().health -= damage;
+                player.GetComponent<Health>().setHealth(player.GetComponent<Health>().getHealth() - damage);
             }
         }
     }

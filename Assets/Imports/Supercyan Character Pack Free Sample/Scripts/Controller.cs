@@ -218,4 +218,19 @@ public class Controller : MonoBehaviour
             m_animator.SetTrigger("Jump");
         }
     }
+
+    public void setMoveSpeed(float moveSpeed)
+    {
+        this.m_moveSpeed = moveSpeed;
+    }
+
+    public void setJumpForce(float jumpForce)
+    {
+        this.m_jumpForce = jumpForce;
+    }
+
+    public void setTurnSpeed(float turnSpeed)
+    {
+        this.m_turnSpeed = turnSpeed;
+    }
 }

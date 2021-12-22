@@ -32,7 +32,6 @@ public class weapon : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("in the attack method enemy tag = " + enemy.tag);
         if (enemy.tag == "enemy")
         {
             enemy.GetComponent<Health>().setHealth(enemy.GetComponent<Health>().getHealth() - damage);

@@ -22,6 +22,7 @@ MonoBehaviour:
   - id: 6
   - id: 7
   - id: 8
+  - id: 9
   references:
     version: 1
     00000000:
@@ -87,4 +88,12 @@ MonoBehaviour:
         m_Enabled: 1
         m_WindowName: Inventory
         m_DestroyWhenEmpty: 1
-        m_Amount: -1
+        m_Amount: 1
+    00000009:
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.CrossFade
+        m_Enabled: 1
+        m_Target: 1
+        m_AnimatorState: Pickup
+        m_TransitionDuration: 0.2

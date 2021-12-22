@@ -10,12 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
-  m_Name: 
+  m_Name: Skills
   m_EditorClassIdentifier: 
-  m_GroupName: New Group
-  m_Items: []
-  m_Amounts: 
-  m_Modifiers: []
+  m_GroupName: Skills
+  m_Items:
+  - {fileID: 2298773448226524446}
+  m_Amounts: 01000000
+  m_Modifiers:
+  - modifiers: []
+--- !u!114 &-8351348587484954198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Left Hand
+  m_EditorClassIdentifier: 
+  name: Left Hand
 --- !u!114 &-8227606653170675688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,6 +126,59 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &-5743363197915100124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  m_Id: 9762f3e8-298e-46f0-9e55-ebc484575fa3
+  m_ItemName: Sword
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 19075a85d01bf1d4890d9aef8d617384, type: 3}
+  m_Prefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: -5273777795577938820}
+  m_IsSellable: 0
+  m_BuyPrice: 25
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1548090805121666492}
+  m_SellPrice: 10
+  m_SellCurrency: {fileID: 1548090805121666492}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
+    type: 3}
+  m_Region:
+  - {fileID: -3095420602856527791}
+  references:
+    version: 1
 --- !u!114 &-5273777795577938820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,6 +195,84 @@ MonoBehaviour:
   name: Weapons
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
+--- !u!114 &-5007413458451072736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Head
+  m_EditorClassIdentifier: 
+  name: Head
+--- !u!114 &-4665413349691517664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Shoulders
+  m_EditorClassIdentifier: 
+  name: Shoulders
+--- !u!114 &-4575257221397042587
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Iron Sword
+  m_EditorClassIdentifier: 
+  m_Id: 2e951e39-1c04-4b5d-901a-c0e7caae0ac4
+  m_ItemName: Iron Sword
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 19075a85d01bf1d4890d9aef8d617384, type: 3}
+  m_Prefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: 1158180502680821537}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1548090805121666492}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 1548090805121666492}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 0}
+  m_Region:
+  - {fileID: -3095420602856527791}
+  references:
+    version: 1
 --- !u!114 &-3688654793763430605
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +372,19 @@ MonoBehaviour:
   m_Name: Right Hand
   m_EditorClassIdentifier: 
   name: Right Hand
+--- !u!114 &-2356682359057109567
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Torse
+  m_EditorClassIdentifier: 
+  name: Torse
 --- !u!114 &-2080336467231692351
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +399,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &-233248551973847747
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Feet
+  m_EditorClassIdentifier: 
+  name: Feet
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,8 +432,10 @@ MonoBehaviour:
   - {fileID: 3862718538228838981}
   - {fileID: 5422034304400229756}
   - {fileID: -6460451295158563155}
-  - {fileID: 1086291976022478516}
   - {fileID: 2298773448226524446}
+  - {fileID: -5743363197915100124}
+  - {fileID: -4575257221397042587}
+  - {fileID: 3944543123609044666}
   currencies:
   - {fileID: 1548090805121666492}
   raritys: []
@@ -271,67 +445,24 @@ MonoBehaviour:
   - {fileID: -6789287798072722289}
   - {fileID: 4785837775173681266}
   equipments:
+  - {fileID: -8351348587484954198}
   - {fileID: -3095420602856527791}
+  - {fileID: -5007413458451072736}
+  - {fileID: -4665413349691517664}
+  - {fileID: -2356682359057109567}
+  - {fileID: 6729607315792861117}
+  - {fileID: 2152331387201835014}
+  - {fileID: -233248551973847747}
   itemGroups:
+  - {fileID: -8560031051160485424}
   - {fileID: -8227606653170675688}
+  - {fileID: 8440379876205086739}
   settings:
   - {fileID: -7290002323072873221}
   - {fileID: -2080336467231692351}
   - {fileID: 2541268526856933836}
   - {fileID: 5904661208692294065}
   - {fileID: 3171217176148134838}
---- !u!114 &1086291976022478516
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
-  m_Name: Sword
-  m_EditorClassIdentifier: 
-  m_Id: 2af8078c-9eb6-48ea-b63b-7d44036f5913
-  m_ItemName: Sword
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 19075a85d01bf1d4890d9aef8d617384, type: 3}
-  m_Prefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
-    type: 3}
-  m_Description: 
-  m_Category: {fileID: -5273777795577938820}
-  m_IsSellable: 1
-  m_BuyPrice: 25
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: 1548090805121666492}
-  m_SellPrice: 10
-  m_SellCurrency: {fileID: 1548090805121666492}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
-  m_UseCategoryCooldown: 1
-  m_Cooldown: 1
-  actions: []
-  m_OverrideEquipPrefab: {fileID: 0}
-  m_Region:
-  - {fileID: -3095420602856527791}
-  references:
-    version: 1
 --- !u!114 &1158180502680821537
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -392,6 +523,19 @@ MonoBehaviour:
   ingredients: []
   properties: []
   currencyConversions: []
+--- !u!114 &2152331387201835014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Legs
+  m_EditorClassIdentifier: 
+  name: Legs
 --- !u!114 &2298773448226524446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -438,8 +582,8 @@ MonoBehaviour:
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
   actions: []
-  m_FixedSuccessChance: 100
-  m_GainModifier: {fileID: 0}
+  m_FixedSuccessChance: 50
+  m_GainModifier: {fileID: 11400000, guid: 9316139e0ec80414f995cc0fdcf0ad79, type: 2}
   references:
     version: 1
 --- !u!114 &2541268526856933836
@@ -692,6 +836,59 @@ MonoBehaviour:
   actions: []
   references:
     version: 1
+--- !u!114 &3944543123609044666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  m_Id: bc34f555-b091-4911-b9a4-058cc59cb33c
+  m_ItemName: Shield
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: ce1847e0eae595942ba8c89d625516c2, type: 3}
+  m_Prefab: {fileID: 3047583631983469136, guid: b83e8e4417636b5489b43ca94332730d,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: 1158180502680821537}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1548090805121666492}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 1548090805121666492}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 3047583631983469136, guid: b83e8e4417636b5489b43ca94332730d,
+    type: 3}
+  m_Region:
+  - {fileID: -8351348587484954198}
+  references:
+    version: 1
 --- !u!114 &4785837775173681266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -746,7 +943,7 @@ MonoBehaviour:
   m_SkillWindow: Skills
   m_CraftingSkill: {fileID: 2298773448226524446}
   m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 1
+  m_MinCraftingSkillValue: 0
   m_CraftingAnimatorState: Blacksmithy
   m_CraftingModifier:
     modifiers: []
@@ -772,6 +969,19 @@ MonoBehaviour:
   savingKey: Player
   savingRate: 60
   provider: 0
+--- !u!114 &6729607315792861117
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
+  m_Name: Amulet
+  m_EditorClassIdentifier: 
+  name: Amulet
 --- !u!114 &8184904941069533423
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -872,3 +1082,19 @@ MonoBehaviour:
         m_Enabled: 1
         m_WindowName: Table
         m_DestroyWhenEmpty: 0
+--- !u!114 &8440379876205086739
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: Spells
+  m_EditorClassIdentifier: 
+  m_GroupName: Spells
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []

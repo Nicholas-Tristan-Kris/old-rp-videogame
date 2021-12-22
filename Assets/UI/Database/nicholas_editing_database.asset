@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8560031051160485424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GroupName: New Group
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
 --- !u!114 &-8227606653170675688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,6 +261,7 @@ MonoBehaviour:
   - {fileID: 5422034304400229756}
   - {fileID: -6460451295158563155}
   - {fileID: 1086291976022478516}
+  - {fileID: 2298773448226524446}
   currencies:
   - {fileID: 1548090805121666492}
   raritys: []
@@ -375,6 +392,56 @@ MonoBehaviour:
   ingredients: []
   properties: []
   currencyConversions: []
+--- !u!114 &2298773448226524446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9a3ee254b78a64481dccedbfd4ba41, type: 3}
+  m_Name: Crafting
+  m_EditorClassIdentifier: 
+  m_Id: 8c270d42-9de9-4faa-bcb8-322594da8246
+  m_ItemName: Crafting
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f6293f20fd85aa143bead12afd67ebbb, type: 3}
+  m_Prefab: {fileID: 0}
+  m_Description: Allows the ability to craft
+  m_Category: {fileID: -5273777795577938820}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1548090805121666492}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 1548090805121666492}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_FixedSuccessChance: 100
+  m_GainModifier: {fileID: 0}
+  references:
+    version: 1
 --- !u!114 &2541268526856933836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -675,11 +742,11 @@ MonoBehaviour:
   m_OverridePrefab: {fileID: 0}
   m_IsCraftable: 1
   m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
+  m_UseCraftingSkill: 1
   m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
+  m_CraftingSkill: {fileID: 2298773448226524446}
   m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
+  m_MinCraftingSkillValue: 1
   m_CraftingAnimatorState: Blacksmithy
   m_CraftingModifier:
     modifiers: []

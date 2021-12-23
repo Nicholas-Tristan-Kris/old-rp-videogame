@@ -207,10 +207,9 @@ MonoBehaviour:
   attachments:
   - region: {fileID: -8351348587484954198, guid: b5147eefd62dfa4429470133d826f15d,
       type: 2}
-    prefab: {fileID: 3047583631983469136, guid: b83e8e4417636b5489b43ca94332730d,
-      type: 3}
+    prefab: {fileID: 0}
     position: {x: -0.00523, y: -0.00016, z: -0.00016}
-    rotation: {x: 2.6827912, y: 181.79347, z: 193.23416}
+    rotation: {x: 2.6827898, y: 181.79347, z: 193.23416}
     scale: {x: 0.026066374, y: 0.026066374, z: 0.026066374}
     gameObject: {fileID: 0}
 --- !u!114 &886767601

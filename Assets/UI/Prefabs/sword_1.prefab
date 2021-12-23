@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8085393313158976022}
   - component: {fileID: 6779768452584778020}
   - component: {fileID: 8892820555969552436}
-  - component: {fileID: 1962584277293491274}
-  - component: {fileID: 3976389922681447808}
-  - component: {fileID: 2056133864}
+  - component: {fileID: 880643066}
+  - component: {fileID: 880643067}
+  - component: {fileID: 880643068}
   m_Layer: 0
   m_Name: sword_1
   m_TagString: weapon
@@ -134,7 +134,7 @@ MonoBehaviour:
   player: {fileID: 0}
   isAttacking: 0
   alreadyAttacked: 0
---- !u!114 &1962584277293491274
+--- !u!114 &880643066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,31 +147,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  useDistance: 3
+  useDistance: 2.5
   triggerType: 8
   key: 102
   actionTemplate: {fileID: 11400000, guid: 266be9dec7aecfd478a15030f031572c, type: 2}
-  actions:
-  - id: 0
-  - id: 1
+  actions: []
   m_Interruptable: 0
   references:
     version: 1
-    00000000:
-      type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
-      data:
-        m_Type: DevionGames.InventorySystem.CanPickup
-        m_Enabled: 1
-        m_WindowName: Inventory
-    00000001:
-      type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
-      data:
-        m_Type: DevionGames.InventorySystem.Pickup
-        m_Enabled: 1
-        m_WindowName: Inventory
-        m_DestroyWhenEmpty: 1
-        m_Amount: 1
---- !u!114 &3976389922681447808
+--- !u!114 &880643067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016310824286880049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: Iron Sword
+  m_Instruction: To Pickup
+--- !u!114 &880643068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,17 +190,3 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2056133864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016310824286880049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Title: Iron Sword
-  m_Instruction: To Pickup

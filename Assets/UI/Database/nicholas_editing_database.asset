@@ -1,5 +1,57 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8987657837831402481
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Dagger
+  m_EditorClassIdentifier: 
+  m_Id: 493146a0-ba9c-44af-8239-f27d375a6eac
+  m_ItemName: Dagger
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: b1786400b75ac01458409be6d31dc2c4, type: 3}
+  m_Prefab: {fileID: 1320272992674531936, guid: 520a0f399bfa27641b7b5fab73119241,
+    type: 3}
+  m_Description: Combat Melee Weapon
+  m_Category: {fileID: -5273777795577938820}
+  m_IsSellable: 1
+  m_BuyPrice: 10
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1548090805121666492}
+  m_SellPrice: 25
+  m_SellCurrency: {fileID: 1548090805121666492}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 0
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 0}
+  m_Region:
+  - {fileID: -3095420602856527791}
+  references:
+    version: 1
 --- !u!114 &-8560031051160485424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +198,7 @@ MonoBehaviour:
   m_Prefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
     type: 3}
   m_Description: 
-  m_Category: {fileID: -5273777795577938820}
+  m_Category: {fileID: 0}
   m_IsSellable: 0
   m_BuyPrice: 25
   m_CanBuyBack: 1
@@ -155,7 +207,7 @@ MonoBehaviour:
   m_SellCurrency: {fileID: 1548090805121666492}
   m_Stack: 1
   m_MaxStack: 1
-  m_IsDroppable: 1
+  m_IsDroppable: 0
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
   m_IsCraftable: 0
@@ -197,8 +249,7 @@ MonoBehaviour:
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
   actions: []
-  m_OverrideEquipPrefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
-    type: 3}
+  m_OverrideEquipPrefab: {fileID: 0}
   m_Region:
   - {fileID: -3095420602856527791}
   references:
@@ -394,6 +445,7 @@ MonoBehaviour:
   - {fileID: 2298773448226524446}
   - {fileID: -5743363197915100124}
   - {fileID: 3944543123609044666}
+  - {fileID: -8987657837831402481}
   currencies:
   - {fileID: 1548090805121666492}
   raritys: []
@@ -401,7 +453,7 @@ MonoBehaviour:
   - {fileID: -5273777795577938820}
   - {fileID: 1158180502680821537}
   - {fileID: -6789287798072722289}
-  - {fileID: 4785837775173681266}
+  - {fileID: 0}
   equipments:
   - {fileID: -8351348587484954198}
   - {fileID: -3095420602856527791}
@@ -826,28 +878,11 @@ MonoBehaviour:
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
   actions: []
-  m_OverrideEquipPrefab: {fileID: 3047583631983469136, guid: b83e8e4417636b5489b43ca94332730d,
-    type: 3}
+  m_OverrideEquipPrefab: {fileID: 0}
   m_Region:
   - {fileID: -8351348587484954198}
   references:
     version: 1
---- !u!114 &4785837775173681266
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4abab319188bac4a8515c585b13ba9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  name: 
-  m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
-  m_Cooldown: 1
 --- !u!114 &5422034304400229756
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -908,7 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefcd19cdc9839d449772c4dce1503f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoSave: 0
+  autoSave: 1
   savingKey: Player
   savingRate: 60
   provider: 0

@@ -46,4 +46,4 @@ MonoBehaviour:
         m_Enabled: 1
         m_WindowName: Inventory
         m_DestroyWhenEmpty: 1
-        m_Amount: 1
+        m_Amount: -1

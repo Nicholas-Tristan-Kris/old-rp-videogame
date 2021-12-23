@@ -169,7 +169,31 @@ MonoBehaviour:
   m_CraftingModifier:
     modifiers: []
   ingredients: []
-  properties: []
+  properties:
+  - name: Damage
+    typeIndex: 5
+    stringValue: 
+    intValue: 10
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  - name: Uses
+    typeIndex: 5
+    stringValue: 
+    intValue: 500
+    floatValue: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    boolValue: 0
+    objectReferenceValue: {fileID: 0}
+    vector2Value: {x: 0, y: 0}
+    vector3Value: {x: 0, y: 0, z: 0}
+    show: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
   m_UseCategoryCooldown: 1
   m_Cooldown: 1
   actions: []
@@ -221,58 +245,6 @@ MonoBehaviour:
   m_Name: Shoulders
   m_EditorClassIdentifier: 
   name: Shoulders
---- !u!114 &-4575257221397042587
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
-  m_Name: Iron Sword
-  m_EditorClassIdentifier: 
-  m_Id: 2e951e39-1c04-4b5d-901a-c0e7caae0ac4
-  m_ItemName: Iron Sword
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 19075a85d01bf1d4890d9aef8d617384, type: 3}
-  m_Prefab: {fileID: 1016310824286880049, guid: a21d2b3f0c06c4842a1c7d8ba828e421,
-    type: 3}
-  m_Description: 
-  m_Category: {fileID: 1158180502680821537}
-  m_IsSellable: 0
-  m_BuyPrice: 0
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: 1548090805121666492}
-  m_SellPrice: 0
-  m_SellCurrency: {fileID: 1548090805121666492}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
-  m_UseCategoryCooldown: 1
-  m_Cooldown: 1
-  actions: []
-  m_OverrideEquipPrefab: {fileID: 0}
-  m_Region:
-  - {fileID: -3095420602856527791}
-  references:
-    version: 1
 --- !u!114 &-3688654793763430605
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,19 +371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
---- !u!114 &-233248551973847747
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
-  m_Name: Feet
-  m_EditorClassIdentifier: 
-  name: Feet
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +393,6 @@ MonoBehaviour:
   - {fileID: -6460451295158563155}
   - {fileID: 2298773448226524446}
   - {fileID: -5743363197915100124}
-  - {fileID: -4575257221397042587}
   - {fileID: 3944543123609044666}
   currencies:
   - {fileID: 1548090805121666492}
@@ -451,8 +409,6 @@ MonoBehaviour:
   - {fileID: -4665413349691517664}
   - {fileID: -2356682359057109567}
   - {fileID: 6729607315792861117}
-  - {fileID: 2152331387201835014}
-  - {fileID: -233248551973847747}
   itemGroups:
   - {fileID: -8560031051160485424}
   - {fileID: -8227606653170675688}
@@ -523,19 +479,6 @@ MonoBehaviour:
   ingredients: []
   properties: []
   currencyConversions: []
---- !u!114 &2152331387201835014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8f5f34ef39fbec438e689ea49ddb023, type: 3}
-  m_Name: Legs
-  m_EditorClassIdentifier: 
-  name: Legs
 --- !u!114 &2298773448226524446
 MonoBehaviour:
   m_ObjectHideFlags: 1

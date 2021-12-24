@@ -12,27 +12,38 @@ public class Fighting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(weapon != null)
+        isAttacking = m_animator.GetCurrentAnimatorStateInfo(1).IsName("Sword Slash");
+
+        if(weapon == null) {
+            if(GetComponentInChildren<weapon>()) {
+                GameObject equippedWeapon = GetComponentInChildren<weapon>().gameObject;
+                equippedWeapon.GetComponent<weapon>().equipped();
+                this.weapon = equippedWeapon;
+            }
+        }
+        if(weapon != null) {
+            if(!GetComponentInChildren<weapon>()) {
+                weapon = null;
+            }
             currentlyAttacking = weapon.GetComponent<weapon>().alreadyAttacked;
-        isAttacking = m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack");
-
-
+        }
 
         if (weapon != null && Input.GetButton("Fire1") && !isAttacking)
         {
             Attack();
-            weapon.GetComponent<weapon>().Attack();
+            weapon.GetComponent<weapon>().setAttacked(true);
         }
 
     }
 
     private void Attack()
     {
+
         m_animator.SetTrigger("Attack");
 
     }
 
-    public void setWeapon() {
-        this.weapon = GetComponentInChildren<weapon>().gameObject;
+    public void setWeapon(GameObject weapon) {
+        this.weapon = weapon;
     }
 }

@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 8330634329562462773}
   - component: {fileID: 8330634329562462770}
   - component: {fileID: 8330634329562462771}
-  - component: {fileID: 72236078}
-  - component: {fileID: 1352651121}
   m_Layer: 0
   m_Name: Third Person Camera
   m_TagString: MainCamera
@@ -110,14 +108,58 @@ MonoBehaviour:
   m_DontDestroyOnLoad: 1
   m_Target: {fileID: 0}
   m_Presets:
+  - m_Name: ChangeHeight
+    m_InputName: 
+    m_Activation: 1
+    m_Crosshair: {fileID: 0}
+    m_Offset: {x: 0, y: 0.7}
+    m_Distance: 2.5
+    m_TurnButton: 
+    m_TurnSpeed: 1.5
+    m_TurnSmoothing: 0.05
+    m_YawLimit: {x: -180, y: 180}
+    m_PitchLimit: {x: -60, y: 60}
+    m_VisibilityDelta: 0.3
+    m_ZoomSpeed: 5
+    m_ZoomLimit: {x: 1.5, y: 6}
+    m_ZoomSmoothing: 10
+    m_MoveSmoothing: 0.07
+    m_CursorMode: 0
+    m_ConsumeInputOverUI: 1
+    m_CollisionLayer:
+      serializedVersion: 2
+      m_Bits: 1
+    m_CollisionRadius: 0.4
+  - m_Name: Focused
+    m_InputName: Fire2
+    m_Activation: 2
+    m_Crosshair: {fileID: 21300000, guid: 2d2b9aa356fcd0a4897e3c285c57382a, type: 3}
+    m_Offset: {x: 0.5, y: 1.7}
+    m_Distance: 1
+    m_TurnButton: 
+    m_TurnSpeed: 1.5
+    m_TurnSmoothing: 0.05
+    m_YawLimit: {x: -180, y: 180}
+    m_PitchLimit: {x: -30, y: 60}
+    m_VisibilityDelta: 0.3
+    m_ZoomSpeed: 5
+    m_ZoomLimit: {x: 1, y: 1}
+    m_ZoomSmoothing: 0.1
+    m_MoveSmoothing: 0.07
+    m_CursorMode: 0
+    m_ConsumeInputOverUI: 1
+    m_CollisionLayer:
+      serializedVersion: 2
+      m_Bits: 1
+    m_CollisionRadius: 0.4
   - m_Name: Default
     m_InputName: 
     m_Activation: 0
-    m_Crosshair: {fileID: 21300000, guid: 576e7db613e9d024fb1ac68e765255bf, type: 3}
-    m_Offset: {x: -0.2, y: 3.5}
-    m_Distance: 6
+    m_Crosshair: {fileID: 0}
+    m_Offset: {x: 0, y: 1.5}
+    m_Distance: 2.5
     m_TurnButton: 
-    m_TurnSpeed: 1
+    m_TurnSpeed: 1.5
     m_TurnSmoothing: 0.05
     m_YawLimit: {x: -180, y: 180}
     m_PitchLimit: {x: -60, y: 60}
@@ -132,34 +174,3 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1
     m_CollisionRadius: 0.1
---- !u!114 &72236078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8330634329562462796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abbe7ce45b455e74fa33e1b0943b3cb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967291
---- !u!114 &1352651121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8330634329562462796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EventMask:
-    serializedVersion: 2
-    m_Bits: 1843
-  m_MaxRayIntersections: 0

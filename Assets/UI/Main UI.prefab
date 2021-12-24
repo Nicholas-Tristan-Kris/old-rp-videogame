@@ -13881,7 +13881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29feedc1ae74594585d58b82bbc4bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ItemGroup: {fileID: -8227606653170675688, guid: b5147eefd62dfa4429470133d826f15d,
+  m_ItemGroup: {fileID: -3197055151169534507, guid: 7366d74c7864afc4a95d336218d044a2,
     type: 2}
 --- !u!1 &5483451656203031757
 GameObject:
@@ -102569,6 +102569,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5483451657404783225}
     m_Modifications:
+    - target: {fileID: 5862319772831950314, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: -5312993569224839084, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
     - target: {fileID: 5862319772919550065, guid: 0caf395e05aec32469f75bea11065a70,
         type: 3}
       propertyPath: m_IsActive
@@ -102739,6 +102745,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Equipment
       objectReference: {fileID: 0}
+    - target: {fileID: 5862319773625033019, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: -8496928819673393122, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
+    - target: {fileID: 5862319773627885562, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: 8659468297737802822, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
     - target: {fileID: 5862319773728756680, guid: 0caf395e05aec32469f75bea11065a70,
         type: 3}
       propertyPath: m_Alpha
@@ -102754,6 +102772,24 @@ PrefabInstance:
       propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5862319774308880009, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: 8659468297737802822, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
+    - target: {fileID: 5862319774784487988, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: -592623762002748800, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
+    - target: {fileID: 6401351104045115197, guid: 0caf395e05aec32469f75bea11065a70,
+        type: 3}
+      propertyPath: region
+      value: 
+      objectReference: {fileID: -5312993569224839084, guid: 7366d74c7864afc4a95d336218d044a2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0caf395e05aec32469f75bea11065a70, type: 3}
 --- !u!224 &4961641531019736036 stripped

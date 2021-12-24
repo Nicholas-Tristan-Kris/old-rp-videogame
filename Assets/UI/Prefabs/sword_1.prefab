@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveable: 1
   m_Items:
-  - {fileID: -5743363197915100124, guid: b5147eefd62dfa4429470133d826f15d, type: 2}
+  - {fileID: 3798319814009528536, guid: 7366d74c7864afc4a95d336218d044a2, type: 2}
   m_Amounts: 01000000
   m_Modifiers:
   - modifiers: []

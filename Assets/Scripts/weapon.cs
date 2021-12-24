@@ -18,11 +18,14 @@ public class weapon : MonoBehaviour
     {
         isAttacking = player.GetComponent<Fighting>().isAttacking;
         m_animator = player.GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
         if (uses <= 0)
         {
             //TODO - make it break instead of destroy it
@@ -44,5 +47,9 @@ public class weapon : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         enemy = collision.gameObject.transform.root.gameObject;
+    }
+
+    public void setPlayer(GameObject player) {
+        this.player = player;
     }
 }

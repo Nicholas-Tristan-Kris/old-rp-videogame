@@ -12,8 +12,11 @@ public class Fighting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentlyAttacking = weapon.GetComponent<weapon>().alreadyAttacked;
+        if(weapon != null)
+            currentlyAttacking = weapon.GetComponent<weapon>().alreadyAttacked;
         isAttacking = m_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack");
+
+
 
         if (weapon != null && Input.GetButton("Fire1") && !isAttacking)
         {
@@ -27,5 +30,9 @@ public class Fighting : MonoBehaviour
     {
         m_animator.SetTrigger("Attack");
 
+    }
+
+    public void setWeapon() {
+        this.weapon = GetComponentInChildren<weapon>().gameObject;
     }
 }

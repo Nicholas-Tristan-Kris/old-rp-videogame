@@ -18,11 +18,20 @@ public class weapon : MonoBehaviour
     {
         isAttacking = player.GetComponent<Fighting>().isAttacking;
         m_animator = player.GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isAttacking && enemy.tag == "enemy") {
+            enemy.GetComponent<Health>().setHealth(enemy.GetComponent<Health>().getHealth() - damage);
+            enemy.GetComponent<Animator>().SetTrigger("Take Damage");
+            uses--;
+            isAttacking = false;
+        }
+        if(player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
         if (uses <= 0)
         {
             //TODO - make it break instead of destroy it
@@ -30,19 +39,29 @@ public class weapon : MonoBehaviour
         }
     }
 
-    public void Attack()
-    {
-        if (enemy.tag == "enemy")
-        {
-            enemy.GetComponent<Health>().setHealth(enemy.GetComponent<Health>().getHealth() - damage);
-            enemy.GetComponent<Animator>().SetTrigger("Take Damage");
-            uses--;
-            
-        }
-    }
-
     void OnTriggerEnter(Collider collision)
     {
         enemy = collision.gameObject.transform.root.gameObject;
+        
+    }
+
+    void OnTriggerExit(Collider collision) {
+        enemy = null;
+    }
+
+    public void setPlayer(GameObject player) {
+        this.player = player;
+        Debug.Log("Set Player");
+    }
+
+    public void equipped() {
+        Debug.Log("Inside Equipped Method");
+        GameObject player = GetComponentInParent<Fighting>().gameObject;
+        Debug.Log("Player is: " + player.name);
+        setPlayer(player);
+    }
+
+    public void setAttacked(bool isAttacking) {
+        this.isAttacking = isAttacking;
     }
 }

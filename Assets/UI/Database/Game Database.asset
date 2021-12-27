@@ -34,7 +34,7 @@ MonoBehaviour:
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 81e9ec1d21e1f8f43a06e7e75c17fc37, type: 3}
-  m_Prefab: {fileID: 4744683750748489434, guid: 3b184b528aeffdb42bb67f9a79d585f9,
+  m_Prefab: {fileID: 5064835432560841063, guid: 8c60c1f2d2702374d847a9a318e0a7a1,
     type: 3}
   m_Description: Axe For Combat and Chopping Down Trees
   m_Category: {fileID: 1351630935913354351}
@@ -319,6 +319,38 @@ MonoBehaviour:
     delay: 2
     duration: 2
     ignoreTimeScale: 1
+--- !u!114 &-3828264298821556259
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: Skills
+  m_EditorClassIdentifier: 
+  m_GroupName: Skills
+  m_Items: []
+  m_Amounts: 
+  m_Modifiers: []
+--- !u!114 &-3326054214947937634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4abab319188bac4a8515c585b13ba9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parent: {fileID: 0}
+  name: Skills
+  m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
+  m_Cooldown: 1
 --- !u!114 &-3197055151169534507
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,6 +431,8 @@ MonoBehaviour:
   - {fileID: -5583428732486276487}
   - {fileID: 5616318075253775827}
   - {fileID: -8758769926986427911}
+  - {fileID: 629236113505202823}
+  - {fileID: 8196321707808378742}
   currencies:
   - {fileID: 1830261039454474956}
   raritys: []
@@ -406,6 +440,7 @@ MonoBehaviour:
   - {fileID: 3766155999315763416}
   - {fileID: 6805770674470800983}
   - {fileID: 1351630935913354351}
+  - {fileID: -3326054214947937634}
   equipments:
   - {fileID: -8496928819673393122}
   - {fileID: -592623762002748800}
@@ -413,12 +448,64 @@ MonoBehaviour:
   - {fileID: 8659468297737802822}
   itemGroups:
   - {fileID: -3197055151169534507}
+  - {fileID: -3828264298821556259}
   settings:
   - {fileID: -2535231273008400673}
   - {fileID: 8255176065577490011}
   - {fileID: -4185260061773383877}
   - {fileID: -2993907699509493807}
   - {fileID: -8774186462134139766}
+--- !u!114 &629236113505202823
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Torch
+  m_EditorClassIdentifier: 
+  m_Id: 33710730-31e3-4c49-9182-74cf77ab9a4a
+  m_ItemName: Torch
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 11910b16cd8c7b846af5bf32ed1b4987, type: 3}
+  m_Prefab: {fileID: 293417886899675894, guid: c2efae97877f166428ff83aa05ce603a, type: 3}
+  m_Description: Torch To Light Your Path
+  m_Category: {fileID: 3766155999315763416}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1830261039454474956}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 1830261039454474956}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 0
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 0}
+  m_Region:
+  - {fileID: -5312993569224839084}
+  references:
+    version: 1
 --- !u!114 &1351630935913354351
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,6 +746,59 @@ MonoBehaviour:
   name: Consumables
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
+--- !u!114 &8196321707808378742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6132cc3558d117f4bbad4651b2dbdba7, type: 3}
+  m_Name: Crossbow
+  m_EditorClassIdentifier: 
+  m_Id: 11b6a27d-5896-4f23-8593-49e604410eef
+  m_ItemName: Crossbow
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
+  m_Prefab: {fileID: 3272848235066910903, guid: d045fde63b7a3d041bf2d3e2588efba9,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: 1351630935913354351}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: 1830261039454474956}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: 1830261039454474956}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+  m_UseCategoryCooldown: 1
+  m_Cooldown: 1
+  actions: []
+  m_OverrideEquipPrefab: {fileID: 0}
+  m_Region:
+  - {fileID: -5312993569224839084}
+  - {fileID: 8659468297737802822}
+  references:
+    version: 1
 --- !u!114 &8255176065577490011
 MonoBehaviour:
   m_ObjectHideFlags: 1

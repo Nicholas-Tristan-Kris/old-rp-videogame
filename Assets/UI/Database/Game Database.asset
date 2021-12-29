@@ -39,10 +39,10 @@ MonoBehaviour:
   m_Description: Axe For Combat and Chopping Down Trees
   m_Category: {fileID: 1351630935913354351}
   m_IsSellable: 1
-  m_BuyPrice: 0
+  m_BuyPrice: 20
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: 1830261039454474956}
-  m_SellPrice: 0
+  m_SellPrice: 10
   m_SellCurrency: {fileID: 1830261039454474956}
   m_Stack: 1
   m_MaxStack: 1
@@ -103,11 +103,11 @@ MonoBehaviour:
     type: 3}
   m_Description: Iron Shield
   m_Category: {fileID: 3766155999315763416}
-  m_IsSellable: 0
-  m_BuyPrice: 0
+  m_IsSellable: 1
+  m_BuyPrice: 15
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: 1830261039454474956}
-  m_SellPrice: 0
+  m_SellPrice: 8
   m_SellCurrency: {fileID: 1830261039454474956}
   m_Stack: 1
   m_MaxStack: 1
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoSave: 1
   savingKey: Player
-  savingRate: 60
+  savingRate: 120
   provider: 0
 --- !u!114 &-2535231273008400673
 MonoBehaviour:
@@ -565,7 +565,9 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
-  currencyConversions: []
+  currencyConversions:
+  - factor: 1
+    currency: {fileID: 1830261039454474956}
 --- !u!114 &3766155999315763416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -604,10 +606,10 @@ MonoBehaviour:
   m_Description: Iron Sword
   m_Category: {fileID: 3766155999315763416}
   m_IsSellable: 1
-  m_BuyPrice: 10
+  m_BuyPrice: 20
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: 1830261039454474956}
-  m_SellPrice: 25
+  m_SellPrice: 12
   m_SellCurrency: {fileID: 1830261039454474956}
   m_Stack: 1
   m_MaxStack: 1
@@ -700,10 +702,10 @@ MonoBehaviour:
   m_Description: 
   m_Category: {fileID: 3766155999315763416}
   m_IsSellable: 1
-  m_BuyPrice: 0
-  m_CanBuyBack: 1
+  m_BuyPrice: 10
+  m_CanBuyBack: 0
   m_BuyCurrency: {fileID: 1830261039454474956}
-  m_SellPrice: 0
+  m_SellPrice: 5
   m_SellCurrency: {fileID: 1830261039454474956}
   m_Stack: 1
   m_MaxStack: 1

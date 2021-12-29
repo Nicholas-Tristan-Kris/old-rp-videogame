@@ -7,6 +7,9 @@
 [Uu]serSetting/
 Assets/AssetStoreTools*
 
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+UserSettings/EditorUserSettings.asset
+
 # Visual Studio cache directory
 .vs/
 
@@ -39,4 +42,3 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.log
-UserSettings/EditorUserSettings.asset

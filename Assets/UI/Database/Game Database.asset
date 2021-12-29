@@ -98,7 +98,7 @@ MonoBehaviour:
   m_ItemName: Gold Scrap
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 1da9f2b04608b044eb7f66ef739e8303, type: 3}
+  m_Icon: {fileID: 21300000, guid: e6e3f8987a355cb43abadc3c4a550666, type: 3}
   m_Prefab: {fileID: 4871307650287448280, guid: 8d4cbc7ed9eef4644844d72e232ea3c0,
     type: 3}
   m_Description: 

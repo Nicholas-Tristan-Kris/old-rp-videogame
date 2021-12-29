@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: -5929987634194605059}
   - component: {fileID: 8634550540918060660}
   - component: {fileID: 8634550540918060661}
-  - component: {fileID: 8634550540918060654}
   - component: {fileID: 8634550540918060653}
   - component: {fileID: 8634550540918060651}
   - component: {fileID: 2995848537818312473}
@@ -110,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 8634550540918060662}
   m_LocalRotation: {x: 0, y: -0.94754833, z: 0, w: 0.3196126}
   m_LocalPosition: {x: 7.1, y: 0.83299994, z: 4.92}
-  m_LocalScale: {x: 0.58122957, y: 0.83874166, z: 0.58122957}
+  m_LocalScale: {x: 1.0923047, y: 1.5762472, z: 1.0923047}
   m_Children:
   - {fileID: 8634550542071474441}
   m_Father: {fileID: 0}
@@ -281,26 +280,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveable: 1
-  m_Items: []
-  m_Amounts: 
-  m_Modifiers: []
+  m_Items:
+  - {fileID: 3798319814009528536, guid: 7366d74c7864afc4a95d336218d044a2, type: 2}
+  - {fileID: -5583428732486276487, guid: 7366d74c7864afc4a95d336218d044a2, type: 2}
+  - {fileID: 5616318075253775827, guid: 7366d74c7864afc4a95d336218d044a2, type: 2}
+  - {fileID: -8758769926986427911, guid: 7366d74c7864afc4a95d336218d044a2, type: 2}
+  m_Amounts: 01000000010000000100000001000000
+  m_Modifiers:
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
   onChange:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8634550540918060654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8634550540918060662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e29feedc1ae74594585d58b82bbc4bab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ItemGroup: {fileID: -8192587188366231400, guid: 1ae57b994efcab048a1bb130d4e11d83,
-    type: 2}
 --- !u!114 &8634550540918060653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,11 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HandlerName: Target Stats
   saveable: 0
-  m_Stats:
-  - {fileID: -4240061784426487929, guid: 294a0f3c3623873439762c5f55d6af2a, type: 2}
-  - {fileID: -4885797470720747453, guid: 294a0f3c3623873439762c5f55d6af2a, type: 2}
-  - {fileID: 4191169994067471883, guid: 294a0f3c3623873439762c5f55d6af2a, type: 2}
-  - {fileID: -2558327947788714437, guid: 294a0f3c3623873439762c5f55d6af2a, type: 2}
+  m_Stats: []
   m_StatOverrides:
   - overrideBaseValue: 0
     baseValue: 0

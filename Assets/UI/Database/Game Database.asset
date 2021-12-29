@@ -82,6 +82,50 @@ MonoBehaviour:
   m_Name: Head
   m_EditorClassIdentifier: 
   name: Head
+--- !u!114 &-8040548467109583430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Gold Scrap
+  m_EditorClassIdentifier: 
+  m_Id: 3b8bee85-89c9-4191-a9cb-0d072f986524
+  m_ItemName: Gold Scrap
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1da9f2b04608b044eb7f66ef739e8303, type: 3}
+  m_Prefab: {fileID: 4871307650287448280, guid: 8d4cbc7ed9eef4644844d72e232ea3c0,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: 3766155999315763416}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: 1830261039454474956}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: 1830261039454474956}
+  m_Stack: 1
+  m_MaxStack: 64
+  m_IsDroppable: 0
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-5583428732486276487
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -433,6 +477,7 @@ MonoBehaviour:
   - {fileID: -8758769926986427911}
   - {fileID: 629236113505202823}
   - {fileID: 8196321707808378742}
+  - {fileID: -8040548467109583430}
   currencies:
   - {fileID: 1830261039454474956}
   raritys: []
@@ -565,9 +610,7 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
-  currencyConversions:
-  - factor: 1
-    currency: {fileID: 1830261039454474956}
+  currencyConversions: []
 --- !u!114 &3766155999315763416
 MonoBehaviour:
   m_ObjectHideFlags: 1

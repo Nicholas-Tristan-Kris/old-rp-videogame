@@ -156,8 +156,8 @@ MonoBehaviour:
     m_InputName: 
     m_Activation: 0
     m_Crosshair: {fileID: 0}
-    m_Offset: {x: 0, y: 4}
-    m_Distance: -0.976
+    m_Offset: {x: 0, y: 1.5}
+    m_Distance: 2.5
     m_TurnButton: 
     m_TurnSpeed: 1.5
     m_TurnSmoothing: 0.05
@@ -165,7 +165,7 @@ MonoBehaviour:
     m_PitchLimit: {x: -60, y: 60}
     m_VisibilityDelta: 0.3
     m_ZoomSpeed: 5
-    m_ZoomLimit: {x: 1.5, y: 25}
+    m_ZoomLimit: {x: 1.5, y: 6}
     m_ZoomSmoothing: 0.1
     m_MoveSmoothing: 0.07
     m_CursorMode: 0

@@ -28,28 +28,6 @@ MonoBehaviour:
   savingKey: Player
   savingRate: 60
   provider: 0
---- !u!114 &-5736846013444648165
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3a845730d6a9d41bf6a379795de496, type: 3}
-  m_Name: Health
-  m_EditorClassIdentifier: 
-  m_StatName: Health
-  m_BaseValue: 50
-  m_FormulaGraph:
-    serializationData: "{\n\t\"Nodes\":[{\n\t\t\"Type\":\"DevionGames.Graphs.FormulaOutput\",\n\t\t\"id\":\"89deb5ef-41ca-4545-b77e-c8f1ab06b819\",\n\t\t\"name\":\"Formula
-      Output\",\n\t\t\"position\":\"v2(0,0)\",\n\t\t\"m_Ports\":{\n\t\t\t\"0\":{\n\t\t\t\t\"fieldName\":\"result\",\n\t\t\t\t\"drawPort\":true,\n\t\t\t\t\"label\":false,\n\t\t\t\t\"capacity\":\"Single\",\n\t\t\t\t\"direction\":\"Input\",\n\t\t\t\t\"m_Connections\":{\n\t\t\t\t\t\n\t\t\t\t},\n\t\t\t\t\"m_FieldTypeName\":\"System.Single\"\n\t\t\t}\n\t\t},\n\t\t\"result\":0\n\t}]\n}"
-    serializedObjects: []
-  m_Cap: 200
-  m_Callbacks: []
-  references:
-    version: 1
 --- !u!114 &-5556426779055882980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,6 +48,30 @@ MonoBehaviour:
     serializedObjects: []
   m_Cap: 100
   m_Callbacks: []
+  references:
+    version: 1
+--- !u!114 &-4700329170886131925
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02216d51560172d4683cc5fcfc0eb1a7, type: 3}
+  m_Name: Health
+  m_EditorClassIdentifier: 
+  m_StatName: Health
+  m_BaseValue: 50
+  m_FormulaGraph:
+    serializationData: "{\n\t\"Nodes\":[{\n\t\t\"Type\":\"DevionGames.Graphs.FormulaOutput\",\n\t\t\"id\":\"f2dcf242-c6ee-40db-bcf3-039e32d49c23\",\n\t\t\"name\":\"Formula
+      Output\",\n\t\t\"position\":\"v2(75,-299)\",\n\t\t\"m_Ports\":{\n\t\t\t\"0\":{\n\t\t\t\t\"fieldName\":\"result\",\n\t\t\t\t\"drawPort\":true,\n\t\t\t\t\"label\":false,\n\t\t\t\t\"capacity\":\"Single\",\n\t\t\t\t\"direction\":\"Input\",\n\t\t\t\t\"m_Connections\":{\n\t\t\t\t\t\"0\":{\n\t\t\t\t\t\t\"nodeId\":\"70e363f5-d522-4bfe-a588-06609fcd9d77\",\n\t\t\t\t\t\t\"fieldName\":\"statValue\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"m_FieldTypeName\":\"System.Single\"\n\t\t\t}\n\t\t},\n\t\t\"result\":0\n\t},{\n\t\t\"Type\":\"DevionGames.Graphs.GetStatCurrentValue\",\n\t\t\"id\":\"70e363f5-d522-4bfe-a588-06609fcd9d77\",\n\t\t\"name\":\"Get
+      Stat Current Value\",\n\t\t\"position\":\"v2(-192,-264)\",\n\t\t\"m_Ports\":{\n\t\t\t\"0\":{\n\t\t\t\t\"fieldName\":\"stat\",\n\t\t\t\t\"drawPort\":false,\n\t\t\t\t\"label\":true,\n\t\t\t\t\"capacity\":\"Single\",\n\t\t\t\t\"direction\":\"Input\",\n\t\t\t\t\"m_Connections\":{\n\t\t\t\t\t\n\t\t\t\t},\n\t\t\t\t\"m_FieldTypeName\":\"System.String\"\n\t\t\t},\n\t\t\t\"1\":{\n\t\t\t\t\"fieldName\":\"statValue\",\n\t\t\t\t\"drawPort\":true,\n\t\t\t\t\"label\":true,\n\t\t\t\t\"capacity\":\"Multiple\",\n\t\t\t\t\"direction\":\"Output\",\n\t\t\t\t\"m_Connections\":{\n\t\t\t\t\t\"0\":{\n\t\t\t\t\t\t\"nodeId\":\"f2dcf242-c6ee-40db-bcf3-039e32d49c23\",\n\t\t\t\t\t\t\"fieldName\":\"result\"\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"m_FieldTypeName\":\"DevionGames.StatSystem.Stat\"\n\t\t\t}\n\t\t},\n\t\t\"stat\":\"Vitality\"\n\t}]\n}"
+    serializedObjects: []
+  m_Cap: 200
+  m_Callbacks: []
+  m_StartCurrentValue: 1
   references:
     version: 1
 --- !u!114 &-1254996123107353850
@@ -107,16 +109,39 @@ MonoBehaviour:
   m_Name: stats
   m_EditorClassIdentifier: 
   items:
-  - {fileID: -5736846013444648165}
   - {fileID: -5556426779055882980}
+  - {fileID: -4700329170886131925}
   - {fileID: 5751691592985139510}
   - {fileID: -1254996123107353850}
+  - {fileID: 1506109960987429766}
   effects: []
   settings:
   - {fileID: 2376429714514432877}
   - {fileID: -8412249601879448590}
   - {fileID: -8124069692347007439}
   - {fileID: 4043975786374703328}
+--- !u!114 &1506109960987429766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3a845730d6a9d41bf6a379795de496, type: 3}
+  m_Name: Vitality
+  m_EditorClassIdentifier: 
+  m_StatName: Vitality
+  m_BaseValue: 3
+  m_FormulaGraph:
+    serializationData: "{\n\t\"Nodes\":[{\n\t\t\"Type\":\"DevionGames.Graphs.FormulaOutput\",\n\t\t\"id\":\"6d59bccd-2364-4d16-bb01-15eee9187ae7\",\n\t\t\"name\":\"Formula
+      Output\",\n\t\t\"position\":\"v2(0,0)\",\n\t\t\"m_Ports\":{\n\t\t\t\"0\":{\n\t\t\t\t\"fieldName\":\"result\",\n\t\t\t\t\"drawPort\":true,\n\t\t\t\t\"label\":false,\n\t\t\t\t\"capacity\":\"Single\",\n\t\t\t\t\"direction\":\"Input\",\n\t\t\t\t\"m_Connections\":{\n\t\t\t\t\t\n\t\t\t\t},\n\t\t\t\t\"m_FieldTypeName\":\"System.Single\"\n\t\t\t}\n\t\t},\n\t\t\"result\":0\n\t}]\n}"
+    serializedObjects: []
+  m_Cap: -1
+  m_Callbacks: []
+  references:
+    version: 1
 --- !u!114 &2376429714514432877
 MonoBehaviour:
   m_ObjectHideFlags: 1

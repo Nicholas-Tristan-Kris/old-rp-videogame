@@ -12,10 +12,6 @@ GameObject:
   - component: {fileID: 378229338994087615}
   - component: {fileID: 378229338994087600}
   - component: {fileID: 378229338994087601}
-  - component: {fileID: 378229338994087602}
-  - component: {fileID: 378229338994087603}
-  - component: {fileID: 378229338994087612}
-  - component: {fileID: 378229338994087613}
   m_Layer: 0
   m_Name: Crafting Table
   m_TagString: Untagged
@@ -33,6 +29,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.2585573, y: 0.5966017, z: -1.7142978}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -99,82 +97,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &378229338994087602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378229338994087604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18135c67df91bfe49aecaf565168592d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delegates: []
-  useDistance: 3
-  triggerType: 8
-  key: 102
-  actionTemplate: {fileID: 0}
-  actions:
-  - id: 0
-  m_Interruptable: 0
-  m_RequiredIngredientsWindow: Inventory
-  m_ResultStorageWindow: Inventory
-  m_CraftingProgressbar: CraftingProgress
-  references:
-    version: 1
-    00000000:
-      type: {class: ShowWindow, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
-      data:
-        m_Type: DevionGames.InventorySystem.ShowWindow
-        m_Enabled: 1
-        m_WindowName: Crafting
-        m_DestroyWhenEmpty: 0
---- !u!114 &378229338994087603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378229338994087604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Title: Crafting Table
-  m_Instruction: To Craft
---- !u!114 &378229338994087612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378229338994087604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68165cdf1896c89479a91b2478670c0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveable: 1
-  m_Items: []
-  m_Amounts: 
-  m_Modifiers: []
-  onChange:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &378229338994087613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378229338994087604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e29feedc1ae74594585d58b82bbc4bab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ItemGroup: {fileID: -8227606653170675688, guid: b5147eefd62dfa4429470133d826f15d,
-    type: 2}
